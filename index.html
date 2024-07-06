@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0409a06870.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--------------Navigation Bar--------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="title">Hero</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Hero</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello I'm...</p>
+                <h1><span>Randel Jonh Lontok</span> <br>A BSIT Student From <br>Dalubhasaang Lungsod <br>ng Lucena</h1>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--------------About Me--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated student pursuing a degree in Bachelor of Science information Technology at Dalubhasaang Lungsod ng Lucena. With a strong academic record and active participation in tech-related extracurricular activities, I am driven by a desire to innovate and make a difference in the information technology field.
+
+                        <br><br>I am involved in various projects that leverage technology to solve real-world problems and contribute to open-source initiatives. My commitment extends beyond academics, as I actively mentor younger students and advocate for inclusivity and diversity in tech.
+                        
+                        <br><br>As I continue my journey in the IT sector, I am dedicated to lifelong learning, personal growth, and inspiring the next generation of tech enthusiasts.</p>
+                        <br>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <br><br>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Scraping</span><br>Innovative Thinking , Decision-Making and Analytical Abilities</li>
+                                <li><span>Web Development</span><br>Html,Css, and JavaScipt</li>
+                                <li><span>Programming</span><br>Python,C#</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>Freelance/Part-Time</li>
+                                <li><span>2023 - 2023</span><br>Freelance/Part-Time</li>
+                                <li><span>2022 - 2022</span><br>Freelance/Part-Time</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Dalubhasaang Lungsod ng Lucena</li>
+                                <li><span>2019 - 2022</span><br>St. Augustine School Of Nursing</li>
+                                <li><span>2015 - 2019</span><br>Quezon Nation High School</li>
+                            </ul>
+                        </div>
+                 </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!----------------Experience------------------>
+
+    <div id="exp">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Python is a high-level, interpreted programming language known for its readability and simplicity.</p>
+                    <a href="https://docs.python.org/3/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScipt</h2>
+                    <p>JavaScript is a versatile, high-level programming language primarily used to create interactive and dynamic content on websites.</p>
+                    <a href="https://devdocs.io/javascript/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Html</h2>
+                    <p> HTML is the standard markup language used for creating and structuring content on the web. It defines the structure and layout of a web page using elements like headings, paragraphs, links, images, and other multimedia.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Portfolio------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/exp1.png">
+                    <div class="layer">
+                        <h3>Online Resume</h3>
+                        <p>Made By Html , Css.</p>
+                        <a href="https://randelstock.github.io/online-resume/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/exp2.png">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>Made By Html , Css and JavaScipt.</p>
+                        <a href="https://randelstock.github.io/ipt101-calculator-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/exp3.png">
+                    <div class="layer">
+                        <h3>Rock-Paper-Scissors</h3>
+                        <p>Made By Html , Css and JavaScipt.</p>
+                        <a href="https://randelstock.github.io/rock-paper-scissor/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/RandelStock?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------------Contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> randeljonhlontok@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 09615839702</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rj.lontok.3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/randel.jonh/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/randelstock/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RandelStock"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright ©️ Tutorial by GreatStack</p>
+        </div>
+    </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html> 
